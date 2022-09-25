@@ -162,8 +162,9 @@
 
   &__btn {
     background-color: transparent;
+    display: none !important;
     @media (max-width: $desktop) {
-      display: none;
+      display: flex !important;
     }
   }
 }

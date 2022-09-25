@@ -210,7 +210,6 @@ h6 {
   top: -60%;
   right: 0;
   background-color: #ffca42;
-  border: 1px solid #000000;
   overflow-x: hidden;
   transition: all 0.5s;
   z-index: 3;
@@ -234,6 +233,12 @@ h6 {
 }
 .burger__btn {
   background-color: transparent;
+  display: none !important;
+}
+@media (max-width: 1300px) {
+  .burger__btn {
+    display: flex !important;
+  }
 }
 
 .container {
