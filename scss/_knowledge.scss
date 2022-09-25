@@ -42,8 +42,10 @@
     &--padding {
       padding-right: 83px;
     }
+
     @media (max-width: 1300px) {
       max-width: 635px;
+      padding: 20px;
     }
   }
 

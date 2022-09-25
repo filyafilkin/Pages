@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: row;
     text-align: center;
-    @media (max-width: 1300px) {
+    @media (max-width: $desktop) {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -18,9 +18,10 @@
     padding-top: 229px;
     text-align: left;
     margin-right: 63px;
-    @media (max-width: 1300px) {
-      max-width: 635px;
+    @media (max-width: $desktop) {
+      width: 90%;
       padding-top: 80px;
+      margin-right: 0;
     }
 
     @media (max-width: $tablet) {
@@ -75,7 +76,7 @@
     grid-template-rows: repeat(4, 135px);
     gap: 20px;
     margin-bottom: 150px;
-    @media (max-width: 1300px) {
+    @media (max-width: $desktop) {
       display: flex;
       flex-direction: column;
       margin-bottom: 80px;

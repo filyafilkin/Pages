@@ -94,8 +94,7 @@
     align-items: center;
     background-color: $color-white;
     border: 1px solid $color-white;
-    width: 45px;
-    height: 45px;
+    @include wh(45px);
     transition: all 0.3s ease-in-out;
     &:hover {
       background-color: transparent;
@@ -125,27 +124,21 @@
 }
 
 .burger {
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: center;
+  position: fixed;
   align-items: center;
+  top: 0;
+  right: -2000px;
+  transition: right 0.2s;
   gap: 60px;
   width: 40vw;
-  height: 110vh;
-  position: absolute;
-  top: -60%;
-  right: 0;
+  height: 100vh;
   background-color: $color-yellow;
   overflow-x: hidden;
   transition: all 0.5s;
   z-index: 3;
-  &__open {
-    display: none;
-  }
-
-  &__close {
-    display: none;
-  }
 
   &__link {
     color: $color-blue;
@@ -155,16 +148,29 @@
     transition: all 0.3s ease-in;
   }
 
-  &__close {
-    fill: $color-blue;
-    z-index: 4;
-  }
-
   &__btn {
     background-color: transparent;
-    display: none !important;
+    &--open {
+      display: none;
+    }
+
+    &--close {
+      display: none;
+      position: absolute;
+      right: 5%;
+      z-index: 4;
+    }
+
     @media (max-width: $desktop) {
-      display: flex !important;
+      &--open {
+        display: flex !important;
+      }
+    }
+  }
+
+  &__icon {
+    &--close {
+      fill: $color-blue;
     }
   }
 }

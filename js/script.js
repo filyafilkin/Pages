@@ -21,18 +21,18 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-let close = document.querySelector(".burger__close");
-let burger = document.querySelector(".burger__open");
+let close = document.querySelector(".burger__btn--close");
+let burger = document.querySelector(".burger__btn--open");
 let menu = document.querySelector(".burger");
 
 burger.addEventListener("click", function (e) {
-  menu.classList.toggle("active");
+  menu.classList.toggle("active--menu");
   close.classList.toggle("active");
   burger.classList.toggle("active");
 });
 
 close.addEventListener("click", function (e) {
-  menu.classList.toggle("active");
+  menu.classList.toggle("active--menu");
   close.classList.toggle("active");
   burger.classList.toggle("active");
 });

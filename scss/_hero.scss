@@ -13,6 +13,10 @@
       align-items: center;
       padding: 20px 0 80px 0;
     }
+
+    @media (max-width: $phone) {
+      height: 100vh;
+    }
   }
 
   &__content {
@@ -54,7 +58,6 @@
     line-height: 36px;
     letter-spacing: 1.2px;
     color: $color-white;
-    margin-bottom: 8px;
     padding-left: 49px;
     position: relative;
     &::before {
@@ -66,6 +69,10 @@
       left: 0px;
       bottom: 50%;
       transform: translate(0, 50%);
+    }
+
+    @media (max-width: $phone) {
+      margin-bottom: 15px;
     }
   }
 
@@ -108,7 +115,7 @@
     @media (max-width: $phone) {
       display: flex;
       flex-direction: column;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
       margin-right: 0;
     }
   }
@@ -118,7 +125,7 @@
     flex-direction: row;
     gap: 61px;
     @media (max-width: $tablet) {
-      margin: 0 auto;
+      gap: 15px;
     }
   }
 
@@ -130,6 +137,8 @@
 
     @media (max-width: $tablet) {
       padding-left: 0;
+      width: 33%;
+      text-align: center;
       &--wrapper {
         padding-right: 0;
       }
@@ -144,6 +153,9 @@
     color: $color-white;
     position: relative;
     margin-bottom: 12px;
+    @media (max-width: $tablet) {
+      font-size: 18px;
+    }
   }
 
   &__description {
@@ -153,6 +165,7 @@
     padding-left: 26px;
     @media (max-width: $tablet) {
       padding-left: 0;
+      font-size: 12px;
     }
   }
 }
