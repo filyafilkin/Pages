@@ -1,0 +1,74 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.subscribe {
+  padding: 120px 0;
+  @media (max-width: $laptop) {
+    padding: 0;
+  }
+
+  &__container {
+    text-align: center;
+    border-radius: 5px;
+    background-color: $color-yellow;
+  }
+
+  &__title {
+    padding-top: 88px;
+    margin-bottom: 51px;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 28px;
+    color: $color-blue;
+    max-width: 550px;
+    margin: 0 auto 51px auto;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__input {
+    padding: 17px 39px;
+    width: 656px;
+    margin: 0 16px 115px 0;
+    font-size: 18px;
+    line-height: 31px;
+    letter-spacing: 0.18px;
+    color: $color-blue;
+    border: 2px solid transparent;
+    &::placeholder {
+      font-size: 18px;
+      line-height: 31px;
+      letter-spacing: 0.18px;
+      color: $color-cyan;
+    }
+
+    &:focus {
+      border: 2px solid $color-blue;
+    }
+
+    @media (max-width: $laptop) {
+      width: 80%;
+      margin: 0 0 40px 0;
+    }
+  }
+
+  &__btn {
+    padding: 18px 120px;
+    background-color: $color-blue;
+    color: $color-white;
+    max-width: 328px;
+    border: 2px solid $color-blue;
+    &:hover {
+      color: $color-blue;
+    }
+
+    @media (max-width: $laptop) {
+      margin-bottom: 80px;
+    }
+  }
+}

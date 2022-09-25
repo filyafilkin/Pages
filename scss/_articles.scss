@@ -1,0 +1,109 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.articles {
+  background-color: $color-background;
+  &__container {
+    padding-top: 130px;
+    text-align: center;
+    position: relative;
+  }
+
+  &__title {
+    margin-bottom: 96px;
+  }
+
+  &__item {
+    text-align: left;
+    background-color: $color-white;
+    margin-bottom: 150px;
+  }
+
+  &__img img {
+    width: 100%;
+    height: 350px;
+    border-radius: 5px 5px 0px 0px;
+  }
+
+  &__content {
+    padding: 25px 35px 11px 30px;
+  }
+
+  &__subtitle {
+    font-family: "Cardo";
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 0.24px;
+    color: $color-blue;
+    margin-bottom: 19px;
+    padding-right: 45px;
+  }
+
+  &__text {
+    margin-bottom: 9px;
+    line-height: 32px;
+  }
+
+  &__bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 28px;
+  }
+
+  &__link {
+    font-family: "Cardo";
+    font-size: 19px;
+    line-height: 23px;
+    letter-spacing: 0.38px;
+    color: $color-blue;
+    border-bottom: 2px solid $color-blue;
+    padding-right: 7px;
+  }
+
+  &__date {
+    font-size: 16px;
+    line-height: 26px;
+    color: $color-blue;
+  }
+}
+
+.swiper {
+  position: static !important;
+}
+
+.swiper-slide {
+  max-width: 420px;
+}
+
+.mySwiper-button-prev {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 53.2%;
+  right: 96.9%;
+  @include wh(50px);
+  z-index: 2;
+  border-radius: 100%;
+  background-color: $color-yellow;
+  @media (max-width: $laptop) {
+    display: none;
+  }
+}
+
+.mySwiper-button-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 53.2%;
+  left: 96.9%;
+  @include wh(50px);
+  z-index: 2;
+  border-radius: 100%;
+  background-color: $color-yellow;
+  @media (max-width: $laptop) {
+    display: none;
+  }
+}

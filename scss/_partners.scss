@@ -1,0 +1,65 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.partners {
+  &__container {
+    text-align: center;
+    @media (max-width: $tablet) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    padding-top: 126px;
+    margin-bottom: 76px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      margin-bottom: 80px;
+    }
+  }
+
+  &__item {
+    width: 313px;
+    @media (max-width: $tablet) {
+      width: 100%;
+    }
+  }
+
+  &__img {
+    margin-bottom: 24px;
+    &--margin {
+      margin-bottom: 18px;
+    }
+  }
+
+  &__name {
+    font-family: "Cardo";
+    font-size: 24px;
+    line-height: 34px;
+    color: $color-blue;
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    text-align: center;
+    margin-bottom: 126px;
+    padding: 0 27px;
+    &--padding {
+      padding: 0 7px;
+    }
+
+    @media (max-width: $tablet) {
+      margin-bottom: 20px;
+    }
+  }
+}

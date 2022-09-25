@@ -1,0 +1,166 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.header {
+  background-color: $color-blue;
+  padding: 22px 0;
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: 35px;
+  }
+
+  &__logo img {
+    width: 119px;
+    height: 35px;
+  }
+
+  &__nav {
+    margin-right: 40px;
+    @media (max-width: $desktop) {
+      display: none;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__item {
+    &:last-child {
+      margin-left: 62px;
+    }
+
+    &:nth-child(3) {
+      margin-left: 50px;
+    }
+
+    &:nth-child(2) {
+      margin-left: 49px;
+    }
+  }
+
+  &__link {
+    color: $color-cyan;
+    font-size: 17px;
+    line-height: 26px;
+    letter-spacing: 0.17px;
+    transition: all 0.3s ease-in;
+    &:hover {
+      color: $color-yellow;
+    }
+  }
+
+  &__btn {
+    @media (max-width: $desktop) {
+      display: none;
+    }
+  }
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  @media (max-width: $desktop) {
+    display: none;
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-white;
+    border: 1px solid $color-white;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background-color: transparent;
+    }
+    &:hover > .social__icon {
+      fill: $color-white;
+    }
+  }
+
+  &__icon {
+    fill: $color-black;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.bucket {
+  margin-right: 51px;
+  &:hover > .bucket__icon {
+    fill: $color-white;
+  }
+  &__icon {
+    fill: $color-black;
+    @include wh(17px);
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  width: 40vw;
+  height: 110vh;
+  position: absolute;
+  top: -60%;
+  right: 0;
+  background-color: $color-background;
+  overflow-x: hidden;
+  transition: all 0.5s;
+  z-index: 3;
+  &__open {
+    display: none;
+  }
+
+  &__close {
+    display: none;
+  }
+
+  &__link {
+    color: $color-blue;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.17px;
+    transition: all 0.3s ease-in;
+  }
+
+  &__close {
+    fill: $color-blue;
+    z-index: 4;
+  }
+
+  &__btn {
+    background-color: transparent;
+  }
+}

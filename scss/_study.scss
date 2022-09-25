@@ -1,0 +1,107 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.study {
+  &__container {
+    text-align: center;
+    @media (max-width: 1300px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    padding-top: 137px;
+    margin-bottom: 117px;
+    @media (max-width: $laptop) {
+      padding-top: 80px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 1300px) {
+      margin-bottom: 80px;
+    }
+  }
+
+  &__list {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 303px);
+    grid-template-rows: repeat(2, 272px);
+    gap: 30px;
+    @media (max-width: $tablet) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: $color-tiffany;
+    padding: 38px 50px 27px 30px;
+    &--first {
+      padding-right: 38px;
+    }
+  }
+
+  &__number {
+    position: relative;
+    z-index: 1;
+    font-family: "Cardo";
+    font-size: 23px;
+    line-height: 29px;
+    color: $color-blue;
+    margin-bottom: 43px;
+    padding-left: 13px;
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: -50%;
+      left: 0;
+      transform: translate(0, 10%);
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+      background-color: $color-yellow;
+    }
+  }
+
+  &__text {
+    font-family: "Cardo";
+    font-size: 24px;
+    line-height: 33.7px;
+    color: $color-blue;
+  }
+
+  &__img {
+    position: relative;
+    width: 555px;
+    height: 652px;
+    border: 10px solid $color-yellow;
+    margin-bottom: 140px;
+    @media (max-width: 1300px) {
+      display: none;
+    }
+    &::before {
+      content: url(../assets/study.png);
+      position: absolute;
+      width: 100%;
+      top: -51px;
+      left: -50px;
+      z-index: 1;
+      @media (max-width: 1300px) {
+        display: none;
+      }
+    }
+  }
+}
+.container {
+}

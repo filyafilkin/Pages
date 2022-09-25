@@ -1,0 +1,162 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.hero {
+  background-color: $color-blue;
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 90px 24px 87px 38px;
+    @media (max-width: $laptop) {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 0 80px 0;
+    }
+    @media (max-width: $tablet) {
+      height: 100vh;
+      padding: 90px 24px 0 38px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 548px;
+    padding-top: 155px;
+    @media (max-width: $desktop) {
+      padding-top: 80px;
+    }
+
+    @media (max-width: $tablet) {
+      width: 90%;
+    }
+  }
+
+  &__img {
+    width: 615px;
+    height: 822px;
+    @media (max-width: $desktop) {
+      width: 50%;
+      height: auto;
+    }
+
+    @media (max-width: $laptop) {
+      display: none;
+    }
+  }
+
+  &__img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__welcome {
+    font-family: "Cardo";
+    font-size: 21px;
+    line-height: 36px;
+    letter-spacing: 1.2px;
+    color: $color-white;
+    margin-bottom: 8px;
+    padding-left: 49px;
+    position: relative;
+    &::before {
+      content: "";
+      width: 35px;
+      height: 2px;
+      border: 1px solid $color-yellow;
+      position: absolute;
+      left: 0px;
+      bottom: 50%;
+      transform: translate(0, 50%);
+    }
+  }
+
+  &__slogan {
+    font-family: "Cardo";
+    font-size: 64px;
+    line-height: 78px;
+    letter-spacing: 1.3px;
+    color: $color-white;
+    &--size {
+      font-size: 63px;
+      margin-bottom: 24px;
+    }
+
+    @media (max-width: $tablet) {
+      font-size: 44px;
+      line-height: 55px;
+      letter-spacing: 0.4px;
+      &--size {
+        font-size: 41px;
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 28px;
+    color: $color-white;
+    margin-bottom: 42px;
+    font-weight: 300;
+  }
+
+  &__buttons {
+    margin-bottom: 48px;
+  }
+
+  &__btn {
+    margin-right: 45px;
+    @media (max-width: $phone) {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    gap: 61px;
+    @media (max-width: $tablet) {
+      margin: 0 auto;
+    }
+  }
+
+  &__block {
+    padding-left: 1.4px;
+    &--wrapper {
+      padding-right: 7px;
+    }
+
+    @media (max-width: $tablet) {
+      padding-left: 0;
+      &--wrapper {
+        padding-right: 0;
+      }
+    }
+  }
+
+  &__term {
+    font-family: "Cardo";
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.48px;
+    color: $color-white;
+    position: relative;
+    margin-bottom: 12px;
+  }
+
+  &__description {
+    font-size: 17px;
+    line-height: 27px;
+    color: $color-cyan;
+    padding-left: 26px;
+    @media (max-width: $tablet) {
+      padding-left: 0;
+    }
+  }
+}

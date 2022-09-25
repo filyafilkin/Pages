@@ -1,0 +1,108 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.books {
+  &__container {
+    text-align: center;
+  }
+
+  &__title {
+    padding-top: 126px;
+    margin-bottom: 90px;
+    @media (max-width: $laptop) {
+      padding-top: 80px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    @media (max-width: $laptop) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 150px;
+    &:first-child {
+      margin-right: 36px;
+    }
+
+    @media (max-width: $laptop) {
+      margin-bottom: 80px;
+      &:first-child {
+        margin-right: 0;
+      }
+    }
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__img {
+    margin-right: 20px;
+    @media (max-width: $tablet) {
+      margin-right: 0;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @media (max-width: $tablet) {
+      align-items: center;
+    }
+  }
+
+  &__subtitle {
+    font-family: "Cardo";
+    font-size: 32px;
+    line-height: 38px;
+    color: $color-blue;
+    margin-bottom: 7px;
+    padding-top: 45px;
+    letter-spacing: 0.32px;
+  }
+
+  &__price {
+    font-size: 21px;
+    line-height: 33px;
+    color: $color-yellow;
+    margin-bottom: 17px;
+  }
+
+  &__text {
+    max-width: 287px;
+    margin-bottom: 16px;
+    @media (max-width: $tablet) {
+      max-width: 90%;
+      text-align: center;
+    }
+  }
+
+  &__status {
+    font-family: "Cardo";
+    font-size: 24px;
+    line-height: 29px;
+    color: $color-blue;
+    margin-bottom: 27px;
+  }
+
+  &__btn {
+    background-color: transparent;
+    color: $color-blue;
+    padding: 18px 52px 18px 50px;
+    &:hover {
+      background-color: $color-yellow;
+      color: $color-white;
+    }
+  }
+}

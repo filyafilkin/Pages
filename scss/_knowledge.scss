@@ -1,0 +1,123 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.knowledge {
+  background-color: $color-tiffany;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    @media (max-width: 1300px) {
+      align-items: center;
+    }
+  }
+
+  &__title {
+    padding-top: 116px;
+    margin-bottom: 96px;
+    @media (max-width: 1300px) {
+      padding-top: 80px;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 635px);
+    grid-template-rows: repeat(2, 242px);
+    gap: 41px 32px;
+    margin-bottom: 70px;
+    @media (max-width: 1300px) {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 42px 58px 0px 40px;
+    background-color: $color-white;
+    &--padding {
+      padding-right: 83px;
+    }
+    @media (max-width: 1300px) {
+      max-width: 635px;
+    }
+  }
+
+  &__article {
+    font-family: "Cardo";
+    font-size: 24px;
+    line-height: 29px;
+    color: $color-blue;
+    margin-bottom: 21px;
+  }
+
+  &__text {
+    margin-bottom: 11.5px;
+    line-height: 32px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: $tablet) {
+      justify-content: left;
+    }
+  }
+
+  &__term {
+    font-family: "Cardo";
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 31px;
+    color: $color-blue;
+    margin-right: 19px;
+  }
+
+  &__description {
+    font-size: 17px;
+    line-height: 27px;
+    color: $color-gray;
+  }
+
+  &__btn {
+    max-width: 429px;
+    margin: 0 auto 34px auto;
+    padding: 22px 98px;
+    &:hover {
+      background-color: $color-blue;
+      color: $color-white;
+      border: 2px solid $color-blue;
+    }
+  }
+
+  &__question {
+    letter-spacing: 0.19px;
+    color: $color-blue;
+  }
+
+  &__link {
+    letter-spacing: 0.19px;
+    color: $color-blue;
+    width: 351px;
+    margin: 0 auto 130px auto;
+    font-size: 18px;
+    line-height: 28px;
+    color: $color-gray;
+  }
+}

@@ -1,0 +1,66 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.copy {
+  background-color: $color-blue;
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: $laptop) {
+      justify-content: center;
+      gap: 20px;
+      padding-bottom: 40px;
+    }
+  }
+
+  &__content {
+    padding-top: 13px;
+  }
+
+  &__title {
+    color: $color-white;
+    margin-bottom: 54px;
+    letter-spacing: 1.7px;
+    @media (max-width: $tablet) {
+      padding-top: 40px;
+    }
+  }
+
+  &__text {
+    max-width: 539px;
+    font-size: 19px;
+    line-height: 30px;
+    color: $color-cyan;
+    margin-bottom: 27px;
+  }
+
+  &__btn {
+    background-color: transparent;
+    color: $color-white;
+    &:hover {
+      background-color: $color-yellow;
+      color: $color-blue;
+    }
+  }
+
+  &__img {
+    margin-bottom: 70px;
+    padding-top: 71px;
+    @media (max-width: $laptop) {
+      width: 50%;
+    }
+
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+
+  &__img img {
+    max-width: 560px;
+    @media (max-width: $laptop) {
+      width: 100%;
+    }
+  }
+}

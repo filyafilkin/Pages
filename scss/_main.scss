@@ -1,0 +1,126 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.container {
+  max-width: 1330px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+
+a {
+  display: block;
+}
+
+.title {
+  font-family: "Cardo";
+  font-size: 42px;
+  line-height: 50px;
+  color: $color-blue;
+  &--center {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 3px;
+      background-color: $color-yellow;
+      width: 50px;
+      height: 3px;
+      bottom: -26px;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    @media (max-width: $tablet) {
+      font-size: 32px;
+    }
+  }
+
+  &--left {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 3px;
+      background-color: $color-yellow;
+      width: 50px;
+      height: 3px;
+      bottom: -28px;
+      left: 0;
+    }
+  }
+
+  &--blue {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      border-bottom: 1px solid $color-blue;
+      background-color: $color-blue;
+      width: 50px;
+      height: 3px;
+      bottom: -25px;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
+}
+
+.btn {
+  font-family: "Cardo";
+  font-size: 19px;
+  line-height: 28px;
+  letter-spacing: 0.57px;
+  background-color: $color-yellow;
+  color: $color-blue;
+  padding: 18px 52.5px;
+  border: 2px solid $color-yellow;
+  max-width: 222px;
+  transition: all 0.3s ease-in;
+  &:hover {
+    background-color: transparent;
+    color: $color-yellow;
+  }
+  &--transparent {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid $color-white;
+    color: $color-white;
+    letter-spacing: 0.38px;
+    padding: 7px 10px 0 3.6px;
+    &:hover {
+      border-bottom: 2px solid $color-yellow;
+    }
+  }
+}
+
+.dot {
+  &::before {
+    content: url(../assets/dot.svg);
+    @include wh(16px);
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+  }
+}
+
+.text {
+  font-size: 19px;
+  line-height: 28px;
+  text-align: left;
+  color: $color-gray;
+  @media (max-width: $tablet) {
+    font-size: 14px;
+  }
+}
+
+.active {
+  display: flex;
+  @media (max-width: $desktop) {
+    display: flex;
+  }
+}

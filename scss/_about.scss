@@ -1,0 +1,177 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.about {
+  background-color: $color-background;
+  &__container {
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    padding-top: 163px;
+    @media (max-width: $laptop) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+      padding-top: 80px;
+    }
+  }
+
+  &__img {
+    position: relative;
+    width: 547px;
+    height: 640px;
+    border: 11px solid $color-yellow;
+    margin-bottom: 140px;
+    &::before {
+      content: url(../assets/author.png);
+      position: absolute;
+      width: 100%;
+      top: -60px;
+      left: -60px;
+      z-index: 1;
+    }
+    @media (max-width: $laptop) {
+      display: none;
+      margin-bottom: 80px;
+      &::before {
+        content: "";
+      }
+    }
+  }
+
+  &__content {
+    width: 597px;
+    @media (max-width: $tablet) {
+      width: 70%;
+    }
+
+    @media (max-width: $phone) {
+      width: 90%;
+    }
+  }
+
+  &__title {
+    padding-top: 16px;
+    margin-bottom: 62px;
+  }
+
+  &__text {
+    margin-bottom: 35px;
+    line-height: 34px;
+  }
+
+  &__description {
+    display: flex;
+    justify-content: left;
+    padding-left: 11px;
+    gap: 21px;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    width: 161px;
+    margin-bottom: 55px;
+    &--border {
+      padding-left: 26px;
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 98px;
+        background-color: $color-yellow;
+        left: -13px;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 1.6px;
+        height: 98px;
+        background-color: $color-yellow;
+        right: -34.5px;
+      }
+    }
+
+    &--padding {
+      padding-left: 50px;
+      width: 213px;
+    }
+
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+
+  &__number {
+    font-family: "Cardo";
+    font-size: 54px;
+    line-height: 77px;
+    color: $color-blue;
+  }
+
+  &__articles {
+    font-size: 17px;
+    line-height: 22px;
+    color: $color-gray;
+    &--padding {
+      padding-right: 16px;
+    }
+  }
+
+  &__bar {
+    display: flex;
+    flex-direction: row;
+    width: 484px;
+    padding: 15px 20px;
+    background-color: $color-blue;
+    @media (max-width: $laptop) {
+      margin: 0 auto 80px auto;
+    }
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+  }
+
+  &__qr {
+    margin-right: 40px;
+    @media (max-width: $tablet) {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__name {
+    font-family: "Cardo";
+    font-size: 22px;
+    line-height: 26px;
+    color: $color-yellow;
+    margin-bottom: 10px;
+    @media (max-width: $tablet) {
+      margin: 0 auto 10px auto;
+    }
+  }
+
+  &__link {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.19px;
+    color: $color-cyan;
+    margin-bottom: 4px;
+    &--wrapper {
+      padding-left: 8px;
+    }
+  }
+}

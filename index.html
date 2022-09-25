@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="wih4h=device-wih4h, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    >
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/script.js" defer></script>
+    <title>Pages</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__left">
+          <a href="#" class="header__logo logo">
+            <img src="./assets/logo.svg" alt="Logo" />
+          </a>
+          <ul class="header__social social">
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <img src="./assets/fb.svg" alt="Facebook">
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <img src="./assets/twitter.svg" alt="Twitter">
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <img src="./assets/in.svg" alt="Indeed">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__right">
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="#" class="header__link">Home</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">About</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">Pages</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="#" class="header__bucket bucket">
+            <svg class="bucket__icon">
+              <use xlink:href="./assets/sprite.svg#bucket"></use>
+            </svg>
+          </a>
+          <button class="header__btn btn">Order Today</button>
+
+          <button class="burger__btn burger__open active">
+            <img src="./assets/burger.svg" alt="Open" class="burger__icon">
+          </button>
+    
+          <button class="burger__btn burger__close">
+            <img src="./assets/close.svg" alt="Close" class="burger__close">
+          </button>
+
+          <ul class="burger">
+            <li>
+              <a href="#" class="header__link burger__link">Home</a>
+            </li>
+            <li>
+              <a href="#" class="header__link burger__link">About</a>
+            </li>
+            <li>
+              <a href="#" class="header__link burger__link">Pages</a>
+            </li>
+            <li>
+              <a href="#" class="header__link burger__link">Contact Us</a>
+            </li>
+          </ul>
+        </header>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__container container">
+          <div class="hero__content">
+            <span class="hero__welcome">Welcome To Pages!!!</span>
+            <h1 class="hero__slogan">Your Books From</h1>
+            <h2 class="hero__slogan hero__slogan--size">The Best Writer.</h2>
+            <p class="hero__text">
+              We believe that reading books are essential to a healthy culture.
+              They're where authors can connect with readers.
+            </p>
+            <div class="hero__buttons">
+              <button class="hero__btn btn">Order Today</button>
+              <button class="hero__button btn btn--transparent">
+                Read Free Demo
+              </button>
+            </div>
+            <div class="hero__list">
+              <div class="hero__block">
+                <h4 class="hero__term dot">Pages:</h4>
+                <span class="hero__description">250pages</span>
+              </div>
+              <div class="hero__block hero__block--wrapper">
+                <h4 class="hero__term dot">Length:</h4>
+                <span class="hero__description">10 Hours</span>
+              </div>
+              <div class="hero__block">
+                <h4 class="hero__term dot">Rating:</h4>
+                <span class="hero__description">4.5/5 (305 ratings)</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero__img">
+            <img
+              src="./assets/hero.png"
+              alt="«The Dark Light» - John Abraham"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="books">
+        <div class="books__container container">
+          <h3 class="books__title title title--center">The Author's Book</h3>
+          <div class="books__list">
+            <div class="books__item">
+              <div class="books__img">
+                <img src="./assets/books1.png" alt="Atomic One's" />
+              </div>
+              <div class="books__content">
+                <h4 class="books__subtitle">Atomic One's</h4>
+                <span class="books__price">$ 13.84 USD</span>
+                <span class="books__text text"
+                  >As the book contains theoretical content as well as solved
+                  questions.</span
+                >
+                <span class="books__status dot">Printed Book</span>
+                <button class="books__btn btn">Order Now</button>
+              </div>
+            </div>
+
+            <div class="books__item">
+              <div class="books__img">
+                <img src="./assets/books2.png" alt="The Dark Light" />
+              </div>
+              <div class="books__content">
+                <h4 class="books__subtitle">The Dark Light</h4>
+                <span class="books__price">$ 86.11 USD</span>
+                <span class="books__text text"
+                  >As the book contains theoretical content as well as solved
+                  questions.</span
+                >
+                <span class="books__status dot">Printed Book</span>
+                <button class="books__btn btn">Order Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="about__container container">
+          <div class="about__img"></div>
+          <div class="about__content">
+            <h2 class="about__title title title--left">About The Author</h2>
+            <p class="about__text text">
+              We believe that bookstores are essential to a healthy culture.
+              They're where authors can connect with readers, where we discover
+              new writers, where children get hooked on the thrill of reading
+              that can last a lifetime.
+            </p>
+            <div class="about__description">
+              <div class="about__block">
+                <span class="about__number">02</span>
+                <span class="about__articles">Books Published</span>
+              </div>
+              <div class="about__block about__block--border">
+                <span class="about__number">4.5</span>
+                <span class="about__articles about__articles--padding">User Reviews</span>
+              </div>
+              <div class="about__block about__block--padding">
+                <span class="about__number">04</span>
+                <span class="about__articles">Best Seller Awards</span>
+              </div>
+            </div>
+            <div class="about__bar">
+              <div class="about__qr">
+                <img src="./assets/qr-code.png" alt="QR-code" />
+              </div>
+              <div class="about__contacts">
+                <span class="about__name">John Abraham , Ph.d</span>
+                <a href="mailto:johnabraham@gmail.com" class="about__link"
+                  >Mail:<span class="about__link about__link--wrapper">johnabraham@gmail.com</span></a
+                >
+                <a href="tel:+21235459000" class="about__link"
+                  >Phone: <span class="about__link about__link--wrapper">(+2) 123 545 9000</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="partners">
+        <div class="partners__container container">
+          <h2 class="partners__title title title--center">
+            Trusted By The Best
+          </h2>
+          <div class="partners__list">
+            <div class="partners__item">
+              <div class="partners__img partners__img--margin">
+                <img src="./assets/amazen.png" alt="Amazen Corp." />
+              </div>
+              <h4 class="partners__name">Amazen Corp.</h4>
+              <p class="partners__text partners__text--padding text">
+                They has been helping readers, music lovers, and videophiles
+                find quality material.
+              </p>
+            </div>
+            <div class="partners__item">
+              <div class="partners__img">
+                <img src="./assets/megan.png" alt="Megan Books" />
+              </div>
+              <h4 class="partners__name">Megan Books</h4>
+              <p class="partners__text text">
+                We help physical bookstores manage their overstock to the book
+                inventory.
+              </p>
+            </div>
+            <div class="partners__item">
+              <div class="partners__img">
+                <img src="./assets/megank.png" alt="Megank" />
+              </div>
+              <h4 class="partners__name">Megank</h4>
+              <p class="partners__text text">
+                Bookstore serving up the full spectrum of Black literature and
+                wine black books.
+              </p>
+            </div>
+            <div class="partners__item">
+              <div class="partners__img">
+                <img src="./assets/urban.png" alt="Urban Store" />
+              </div>
+              <h4 class="partners__name">Urban Store</h4>
+              <p class="partners__text partners__text--padding text">
+                We also carry the latest records, issues of all of your favorite
+                comic books.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="copy">
+        <div class="copy__container container">
+          <div class="copy__content">
+            <h4 class="copy__title title title--left">Get Book Copy Today!</h4>
+            <p class="copy__text">
+              We believe that bookstores are essential to a healthy culture.
+              They're where authors can connect with readers.
+            </p>
+            <button class="copy__btn btn">Order Today</button>
+          </div>
+          <div class="copy__img">
+            <img src="./assets/copy.png" alt="Get Book Copy Today!" />
+          </div>
+        </div>
+      </section>
+
+      <section class="study">
+        <div class="study__container container">
+          <h2 class="study__title title title--center">What Will You Learn?</h2>
+          <div class="study__content">
+            <div class="study__list">
+              <div class="study__item study__item--first">
+                <span class="study__number">01</span>
+                <span class="study__text"
+                  >Use HDFS & Map Reduce for storing & analyzing data at
+                  scale.</span
+                >
+              </div>
+              <div class="study__item study__item--second">
+                <span class="study__number">02</span>
+                <span class="study__text"
+                  >Consume streaming data using Spark Streaming, Flink, and
+                  Storm.</span
+                >
+              </div>
+              <div class="study__item study__item--third">
+                <span class="study__number">03</span>
+                <span class="study__text"
+                  >Choose an appropriate data storage technology for your
+                  application</span
+                >
+              </div>
+              <div class="study__item study__item--fourth">
+                <span class="study__number">04</span>
+                <span class="study__text"
+                  >Analyze non-relational data using HBase, Cassandra, and
+                  MongoDB.</span
+                >
+              </div>
+            </div>
+            <div class="study__img"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="knowledge">
+        <div class="knowledge__container container">
+          <h4 class="knowledge__title title title--center">
+            Enhance Knowledge & Vision
+          </h4>
+          <div class="knowledge__list">
+            <div class="knowledge__item">
+              <h4 class="knowledge__article">Chapter-1 Get Started Intro</h4>
+              <span class="knowledge__text text"
+                >You can double your knowledge by reading this ever needed book
+                that can last a lifetime.</span
+              >
+              <div class="knowledge__content">
+                <div class="knowledge__block">
+                  <span class="knowledge__term dot">Pages :</span>
+                  <span class="knowledge__description">106pages</span>
+                </div>
+                <div class="knowledge__block">
+                  <span class="knowledge__term dot">Length :</span>
+                  <span class="knowledge__description">2 Hours</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="knowledge__item knowledge__item--padding">
+              <h4 class="knowledge__article">Chapter-2 The Roman Culture</h4>
+              <span class="knowledge__text text"
+                >It will help to improve your life career with the perfect and needed knowledge about your life.</span
+              >
+              <div class="knowledge__content">
+                <div class="knowledge__block">
+                  <span class="knowledge__term dot">Pages :</span>
+                  <span class="knowledge__description">180pages</span>
+                </div>
+                <div class="knowledge__block">
+                  <span class="knowledge__term dot">Length :</span>
+                  <span class="knowledge__description">3 Hours</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="knowledge__item">
+              <h4 class="knowledge__article">Chapter-3 How They Servived</h4>
+              <span class="knowledge__text text"
+                >We wanted to create an easy, convenient way for you to get your
+                books & support.</span
+              >
+              <div class="knowledge__content">
+                <div class="knowledge__block">
+                  <span class="knowledge__term dot">Pages :</span>
+                  <span class="knowledge__description">250pages</span>
+                </div>
+                <div class="knowledge__block">
+                  <span class="knowledge__term dot">Length :</span>
+                  <span class="knowledge__description">4 Hours</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="knowledge__item">
+              <h4 class="knowledge__article">Chapter-4 The End Of Romans</h4>
+              <span class="knowledge__text text"
+                >Promote your book via Pages shop to support your writing &
+                reading career.</span
+              >
+              <div class="knowledge__content">
+                <div class="knowledge__block">
+                  <span class="knowledge__term dot">Pages :</span>
+                  <span class="knowledge__description">175pages</span>
+                </div>
+                <div class="knowledge__block">
+                  <span class="knowledge__term dot">Length :</span>
+                  <span class="knowledge__description">3 Hours</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="knowledge__btn btn">Start a 15-Days Free Trail</button>
+          <a class="knowledge__link" href="#">
+            Short description about each chapter
+            <span class="knowledge__question"> Have any questions? </span>
+            Contact us
+          </a>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="reviews__container container">
+          <div class="reviews__content">
+            <h4 class="reviews__title title title--left">
+              Words From Our Readers
+            </h4>
+            <p class="reviews__text text">
+              We believe that bookstores are essential to a healthy culture.
+              They're where authors can connect with readers, where we discover
+              new writers, where children get hooked on the thrill of reading
+              that can last a lifetime.
+            </p>
+            <div class="reviews__rating">
+              <img src="./assets/dot.svg" alt="Rating" />
+              <img src="./assets/dot.svg" alt="Rating" />
+              <img src="./assets/dot.svg" alt="Rating" />
+              <img src="./assets/dot.svg" alt="Rating" />
+              <img src="./assets/dot-half.svg" alt="Rating" />
+              <span class="reviews__grade"> (4.8/5) </span>
+            </div>
+            <span class="reviews__span">Overall Customer Ratings</span>
+          </div>
+
+          <div class="reviews__list">
+            <div class="reviews__item reviews__item--first">
+              <div class="reviews__bar">
+                <div class="reviews__img">
+                  <img src="./assets/review1.png" alt="James Williams" />
+                </div>
+                <div class="revies__block">
+                  <h4 class="reviews__author">James Williams</h4>
+                  <div class="reviews__rating--small">
+                    <img src="./assets/dot.svg" alt="Rating" />
+                    <img src="./assets/dot.svg" alt="Rating" />
+                    <img src="./assets/dot.svg" alt="Rating" />
+                    <img src="./assets/dot.svg" alt="Rating" />
+                    <img src="./assets/dot-half.svg" alt="Rating" />
+                  </div>
+                </div>
+              </div>
+              <q class="reviews__subtitle"> Great Books Collections </q>
+              <p class="reviews__quote">
+                I was searching this book for many years and I was happy that I
+                could find it here.
+              </p>
+            </div>
+            <div class="reviews__item reviews__item--second">
+              <div class="reviews__bar">
+                <div class="reviews__img">
+                  <img src="./assets/review3.png" alt="Angeline Flora" />
+                </div>
+                <div class="revies__block">
+                  <h4 class="reviews__author">Angeline Flora</h4>
+                  <div class="reviews__rating--small">
+                    <img src="./assets/dot.svg" alt="Rating" />
+                    <img src="./assets/dot.svg" alt="Rating" />
+                    <img src="./assets/dot.svg" alt="Rating" />
+                    <img src="./assets/dot.svg" alt="Rating" />
+                    <img src="./assets/dot-half.svg" alt="Rating" />
+                  </div>
+                </div>
+              </div>
+              <q class="reviews__subtitle"> Creative Writing Skill </q>
+              <p class="reviews__quote">
+                Sent an email after to books arrived to ask about the author & I
+                received a reply.
+              </p>
+            </div>
+            <div class="reviews__item reviews__item--third">
+              <div class="reviews__bar">
+                <div class="reviews__img">
+                  <img src="./assets/review2.png" alt="Chris Adams" />
+                </div>
+                <div class="revies__block">
+                  <h4 class="reviews__author">Chris Adams</h4>
+                  <div class="reviews__rating--small">
+                    <img src="./assets/dot.svg" alt="Rating" />
+                    <img src="./assets/dot.svg" alt="Rating" />
+                    <img src="./assets/dot.svg" alt="Rating" />
+                    <img src="./assets/dot.svg" alt="Rating" />
+                    <img src="./assets/dot-empty.svg" alt="Rating" />
+                  </div>
+                </div>
+              </div>
+              <q class="reviews__subtitle"> Perfect Response Author </q>
+              <p class="reviews__quote">
+                I had a question about the book and the author response was
+                great & comfort.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="articles">
+        <div class="articles__container container">
+          <h2 class="articles__title title title--center">
+            Articles & Resources
+          </h2>
+
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper articles__list">
+              <div class="swiper-slide articles__item">
+                <div class="articles__img">
+                  <img
+                    src="./assets/articles1.png"
+                    alt="Significant reading has more info number"
+                  />
+                </div>
+                <div class="articles__content">
+                  <h4 class="articles__subtitle">
+                    Significant reading has more info number
+                  </h4>
+                  <p class="articles__text text">
+                    Override the digital divide with additional clickthroughs from
+                    DevOps for real-time schemas.
+                  </p>
+                  <div class="articles__bar">
+                    <a href="#" class="articles__link">Readmore</a>
+                    <time class="articles__date">October 6, 2021</time>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide articles__item">
+                <div class="articles__img">
+                  <img
+                    src="./assets/articles2.png"
+                    alt="Many variations of pass majority have suffered"
+                  />
+                </div>
+                <div class="articles__content">
+                  <h4 class="articles__subtitle">
+                    Many variations of pass majority have suffered
+                  </h4>
+                  <p class="articles__text text">
+                    Capitalize on low-hanging fruit to identify a ballpark
+                    value-added activity to beta test.
+                  </p>
+                  <div class="articles__bar">
+                    <a href="#" class="articles__link">Readmore</a>
+                    <time class="articles__date">October 6, 2021</time>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide articles__item">
+                <div class="articles__img">
+                  <img
+                    src="./assets/articles3.png"
+                    alt="Words which don’t look even slightly believable"
+                  />
+                </div>
+                <div class="articles__content">
+                  <h4 class="articles__subtitle">
+                    Words which don’t look even slightly believable
+                  </h4>
+                  <p class="articles__text text">
+                    Podcasting operational change management inside of workflows
+                    to establish a framework.
+                  </p>
+                  <div class="articles__bar">
+                    <a href="#" class="articles__link">Readmore</a>
+                    <time class="articles__date">October 6, 2021</time>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mySwiper-button-prev">
+              <img src="./assets/prev.svg" alt="Previous Slide">
+            </div>
+            <div class="mySwiper-button-next">
+              <img src="./assets/next.svg" alt="Next Slide">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="subscribe">
+        <div class="subscribe__container container">
+        <h2 class="subscribe__title title title--blue">
+            Get The Best Updates
+          </h2>
+          <p class="subscribe__text">
+            Subscribe with your mail id to know the current update in book
+            edition at your fingertip with in a minute.
+          </p>
+          <form action="" class="subscribe__form"></form>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="subscribe__input"
+            placeholder="Your Email ID..."
+          />
+          <input type="submit" value="Subscribe" class="subscribe__btn btn" />
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container container">
+          <div class="footer__smm">
+            <div class="footer__logo">
+              <img src="./assets/logo.svg" alt="Pages">
+            </div>
+            <ul class="footer__social social">
+              <li class="social__item">
+                <a href="#" class="footer__brand social__link">
+                  <img class="footer__svg" src="./assets/fb.svg" alt="Facebook">
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="footer__brand social__link">
+                  <img class="footer__svg" src="./assets/twitter.svg" alt="Twitter">
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="footer__brand social__link">
+                  <img class="footer__svg" src="./assets/in.svg" alt="Indeed">
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="footer__brand social__link">
+                  <img class="footer__svg" src="./assets/inst.svg" alt="Instagram">
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__explore">
+            <h4 class="footer__title">Explore</h4>
+            <nav class="footer__nav">
+              <ul class="footer__list">
+                <li class="footer__item"><a href="" class="footer__link dots">Home</a></li>
+                <li class="footer__item"><a href="" class="footer__link dots">About</a></li>
+                <li class="footer__item"><a href="" class="footer__link dots">Articles</a></li>
+                <li class="footer__item"><a href="" class="footer__link dots">Our Store</a></li>
+                <li class="footer__item"><a href="" class="footer__link dots">Contact Us</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="footer__utility utility">
+            <h4 class="footer__title">Utility Pages</h4>
+              <ul class="utility__list">
+                <li class="utility__item"><a href="#" class="utility__link dots">Style Guide</a></li>
+                <li class="utility__item"><a href="#" class="utility__link dots">404 Not Found</a></li>
+                <li class="utility__item"><a href="#" class="utility__link dots">Password Protected</a></li>
+                <li class="utility__item"><a href="#" class="utility__link dots">Licenses</a></li>
+                <li class="utility__item"><a href="#" class="utility__link dots">Changelog</a></li>
+              </ul>
+          </div>
+
+
+          <ul class="footer__contacts contacts">
+            <h4 class="footer__title">Keep in Touch</h4>
+              <li class="contacts__item">
+                <span class="contacts__title">Adress :</span> 
+                <address class="contacts__address contacts__link">24A Kingston St, Los Vegas NC 28202, USA.</adress>
+                </li>
+              <li class="contacts__item">
+                <span class="contacts__title">Mail :</span> 
+                <a href="mailto:johnabraham@gmail.com" class="contacts__email contacts__link">support@pages.com</a></li>
+              <li class="contacts__item">
+                <span class="contacts__title">Phone :</span> 
+                <a href="tel:+221234567900" class="contacts__phone contacts__link">(+22) 123 - 4567 - 900</a></li>
+          </ul>
+
+          <p class="footer__copyright">&#169; Drafted by 
+            <a class="footer__copyright--white" href="#"> VictorFlow </a> - 
+            Powered by 
+            <a class="footer__copyright--white" href="#"> Webflow. </a>
+          </p>
+      </div>
+    </footer>
+
+  </body>
+</html>
