@@ -162,5 +162,8 @@
 
   &__btn {
     background-color: transparent;
+    @media (max-width: $desktop) {
+      display: none;
+    }
   }
 }
