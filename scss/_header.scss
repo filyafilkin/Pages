@@ -127,18 +127,25 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: fixed;
   align-items: center;
   top: 0;
   right: -2000px;
   transition: right 0.2s;
-  gap: 60px;
   width: 40vw;
   height: 100vh;
   background-color: $color-yellow;
   overflow-x: hidden;
   transition: all 0.5s;
   z-index: 3;
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
 
   &__link {
     color: $color-blue;
@@ -157,7 +164,8 @@
     &--close {
       display: none;
       position: absolute;
-      right: 5%;
+      top: 3%;
+      right: 8%;
       z-index: 4;
     }
 

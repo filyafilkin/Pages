@@ -202,18 +202,25 @@ h6 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: fixed;
   align-items: center;
   top: 0;
   right: -2000px;
   transition: right 0.2s;
-  gap: 60px;
   width: 40vw;
   height: 100vh;
   background-color: #ffca42;
   overflow-x: hidden;
   transition: all 0.5s;
   z-index: 3;
+}
+.burger__list {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
 }
 .burger__link {
   color: #1b3764;
@@ -231,7 +238,8 @@ h6 {
 .burger__btn--close {
   display: none;
   position: absolute;
-  right: 5%;
+  top: 3%;
+  right: 8%;
   z-index: 4;
 }
 @media (max-width: 1300px) {
